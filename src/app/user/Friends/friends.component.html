@@ -18,7 +18,7 @@
 					<div class="tab-content">
 						<div class="tab-pane container active" id="myfriend">
 							<ul class="nearby-contct">
-								<li *ngFor="let friend of user4.friend">
+								<li *ngFor="let friend of user4.friends">
 									<div class="nearly-pepls">
 										<figure>
 											<a href="#" title=""><img src="assets/images/friend-avatar9.jpg" alt=""></a>
@@ -28,7 +28,7 @@
 													<td>{{friend}}</td>
 												</a></h4>
 	
-											<button (click)="confirm(user)" title="" class="btn btn-primary">Unfriend</button>
+											<button (click)="del(friend)" title="" class="btn btn-primary">Unfriend</button>
 										</div>
 									</div>
 								</li>

@@ -33,4 +33,8 @@ export class UserService{
         return this.http.get<UserService>(this.baseUrl + "/confirm/" +myEmail1+
         "/" +friendEmail1);
     }
+
+    deleteRequest(myEmail1: string, friendEmail1:string){
+        return this.http.get<UserService>(this.baseUrl+ "/delete/"+ myEmail1+"/"+friendEmail1);
+    }
 }

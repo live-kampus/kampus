@@ -59,4 +59,12 @@ export class FriendsComponent {
                     
                 })
             }
+
+            del(friendEmail1:any){
+                let user2 = JSON.parse(sessionStorage.getItem('user'));
+                let myEmail1= user2.email;
+                this.friend.deleteRequest(myEmail1,friendEmail1).subscribe((data)=>{
+                    location.reload(true);
+                })
+            }
 }
