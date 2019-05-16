@@ -18,7 +18,7 @@ export class ProfileComponent{
 
         this.user = JSON.parse(sessionStorage.getItem('user'));
 
-
+        
         this.profileService.findProfileByEmail().subscribe((data)=>{
             console.log(data);
             this.profile=data;

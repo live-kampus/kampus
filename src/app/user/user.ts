@@ -6,12 +6,12 @@ export class User{
     address:string;
     state:string;
     city:string;
-    school:string;
+    schoolName:string;
     username:string;
     password:string;
     contact:number;
     gender:string;
-    dob:number;
+    dateOfBirth:number;
     friends:string;
     requests:string;
     profile:UserProfile;
